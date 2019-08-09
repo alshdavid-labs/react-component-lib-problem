@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "es6", 
+    "module": "esnext",  
+    "moduleResolution": "node",
+    "baseUrl": "./",
+    "declaration": true,
+    "outDir": "build",
+    "lib": [
+      "dom",
+      "es2017"
+    ],
+    "sourceMap": true,
+    "strict": true,
+    "esModuleInterop": true,
+    "jsx": "react",
+    "jsxFactory": "React.createElement",
+    "experimentalDecorators": true,
+    "allowSyntheticDefaultImports": true,
+    "paths": {
+      "~/*": ["src/*"],
+    }
+  },
+  "exclude": [
+    "./webpack.config.js",
+    "./node_modules",
+    "./public",
+    "./build"
+  ]
+}
